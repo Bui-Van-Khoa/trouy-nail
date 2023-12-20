@@ -5,7 +5,6 @@ import {loadHeaderImage} from '@/lib/fetchData/load-header'
 import Image from 'next/image'
 
 const Header = async() => {
-
 	const cookieStore = cookies()
 	const supabase = createClient(cookieStore);
 	const { data } =  supabase.storage.from('trouy-nail').getPublicUrl('logo/Pure203_edited.webp')
@@ -13,6 +12,7 @@ const Header = async() => {
 	console.log("response", response)
 	return (
 		<header>
+			<pre>Test</pre>
       <nav>
         <div>
           <Image
