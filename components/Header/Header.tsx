@@ -12,7 +12,7 @@ const Header = async() => {
 	console.log("response", response)
 	return (
 		<header>
-			<pre>Test 123</pre>
+			<div>Test 123</div>
       <nav>
         <div>
           <Image
