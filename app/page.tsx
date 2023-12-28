@@ -1,8 +1,7 @@
-export default async function Notes() {
+import React from 'react';
 
-	return (
-		<div>
-			 <pre>Dashboard</pre>
-		</div>
-	)
-}
+const page = () => {
+  return <div>page</div>;
+};
+
+export default page;

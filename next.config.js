@@ -1,9 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-	images: {
-		domains: [process.env.NEXT_PUBLIC_IMAGE_DOMAINS],
-		formats: ["image/avif", "image/webp"],
-		},
-}
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: process.env.NEXT_PUBLIC_IMAGE_DOMAINS,
+        port: '',
+      },
+    ],
+  },
+};
 
 module.exports = nextConfig;

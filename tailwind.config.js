@@ -15,6 +15,13 @@ module.exports = {
         },
       },
     },
+
+    screens: {
+      mobile: { max: '375px' },
+      tablet: { max: '895px' },
+      laptop: { max: '1024px' },
+      desktop: '1280px',
+    },
   },
   plugins: [],
-}
+};
